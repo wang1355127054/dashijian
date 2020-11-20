@@ -1,0 +1,65 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+/* 大背景图 */
+body {
+    background: url('/assets/images/login_bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.bg-tu {
+    height: 60px;
+    width: 150px;
+    background: url(/assets/images/logo.png) no-repeat;
+}
+
+.layui-form {
+    height: 315px;
+    width: 400px;
+    background-color: #fff;
+    margin: 150px auto;
+    text-align: center;
+}
+
+/* 登录框图片 */
+.img-tt {
+    width: 170px;
+    margin-top: 20px;
+}
+
+.cx {
+    padding: 0 30px;
+}
+
+.layui-form-item {
+    margin-top: 16px;
+    position: relative;
+}
+
+.layui-form-item input {
+    padding-left: 30px;
+}
+
+.layui-form-item .layui-icon {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+
+.cx .dl-a {
+    display: inline-block;
+    float: right;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+/* 注册隐藏 */
+.form-2 {
+    display: none;
+}

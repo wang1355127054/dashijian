@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>后台大布局 - Layui</title>
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets/fonts/iconfont.css">
+    <link rel="stylesheet" href="/assets/css/ht.css">
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo">
+                <img src="/assets/images/logo.png" alt="">
+
+            </div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item">
+                    <dl class="layui-nav-child">
+                        <dd><a href=""></a></dd>
+                        <dd><a href="">消息管理</a></dd>
+                        <dd><a href="">授权管理</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <img src="/assets/images/sample.jpg" class="layui-nav-img touxiang">
+                        <span class="text-avatar ys">A</span>
+                        ***
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">基本资料</a></dd>
+                        <dd><a href="javascript:;">更换头像</a></dd>
+                        <dd><a href="javascript:;">重置密码</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">退了</a></li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree l-ul" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascriot:;" class="suerinfo">
+                            <img src="/assets/images/sample.jpg" class="layui-nav-img touxiang" alt="">
+                            <span class="text-avatar ys">A</span>
+                            欢迎 ***
+                        </a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+
+                        <a class="" href="/home/dashboard.html" target="fm"><i class="layui-icon layui-icon-home"> </i>
+                            首页</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;"><i class="layui-icon layui-icon-read"> </i> 文章管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-file-b"> </i> 一</a></dd>
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-file-b"> </i> 二</a></dd>
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-file-b"> </i> 三</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;"><i class="layui-icon layui-icon-user"> </i> 个人中心</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-face-surprised"> </i> 一</a></dd>
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-face-surprised"> </i> 二</a></dd>
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-face-surprised"> </i> 三</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <!-- 内容主体区域 -->
+            <iframe name="fm" src="/home/dashboard.html" frameborder="0"></iframe>
+        </div>
+
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            信息
+        </div>
+    </div>
+
+
+</body>
+<script src="/assets/lib/layui/layui.all.js"></script>
+
+</html>
