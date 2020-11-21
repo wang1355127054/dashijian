@@ -34,7 +34,7 @@ $('#form-reg').submit(function(e) {
 e.preventDefault(); 
 // 发起ajax post请求
 $.post('http://ajax.frontend.itheima.net/api/reguser',{
-  username:$('#form-reg [name=title]').val(),password:$('#form-reg [name=password]').val() 
+  username:$('#form-reg [name=username]').val(),password:$('#form-reg [name=password]').val() 
 }, function(res){
   console.log(res);
   // 判断是否注册成功
@@ -49,7 +49,7 @@ $.post('http://ajax.frontend.itheima.net/api/reguser',{
 $('#form-dl').submit(function(e) {
   // 阻止表单默认提交
   e.preventDefault();
-  console.log($(this).serialize());
+  // console.log($(this).serialize());
   var ser=$(this).serialize()
   // 发起post请求
 $.ajax({
