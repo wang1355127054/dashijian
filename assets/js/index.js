@@ -63,8 +63,8 @@ $.ajax({
       return layer.msg('登陆失败!');
     }
     layer.msg('登陆成功!')
+    localStorage.setItem('token', res.token)
     location.href='/ht.html'
-    console.log(res.token);
   }
 })
 })

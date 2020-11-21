@@ -40,7 +40,7 @@
                         <dd><a href="javascript:;">重置密码</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href="">退了</a></li>
+                <a href="javascript:;" id="btnLogout"><span class="iconfont icon-tuichu"></span>退出</a>
             </ul>
         </div>
 
@@ -52,7 +52,7 @@
                         <a href="javascriot:;" class="suerinfo">
                             <img src="/assets/images/sample.jpg" class="layui-nav-img touxiang" alt="">
                             <span class="text-avatar ys">A</span>
-                            欢迎 ***
+                            <span id="welcome"> </span>
                         </a>
                     </li>
                     <li class="layui-nav-item layui-nav-itemed">
@@ -61,15 +61,19 @@
                             首页</a>
                     </li>
                     <li class="layui-nav-item">
-                        <a href="javascript:;"><i class="layui-icon layui-icon-read"> </i> 文章管理</a>
+                        <a href="javascript:;"><i class="layui-icon layui-icon-user "> </i> 个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-file-b"> </i> 一</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-file-b"> </i> 二</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-file-b"> </i> 三</a></dd>
+                            <dd><a href="/home/xiugaixinxi.html" target="fm"><i class="layui-icon layui-icon-file-b"
+                                        id="yi">
+                                    </i> 登录信息</a>
+                            </dd>
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-file-b"> </i> 修改头像</a></dd>
+                            <dd><a href="/home/xiugaimima.html" target="fm"><i class="layui-icon layui-icon-file-b">
+                                    </i> 修改密码</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">
-                        <a href="javascript:;"><i class="layui-icon layui-icon-user"> </i> 个人中心</a>
+                        <a href="javascript:;"><i class="layui-icon layui-icon-read"> </i> 文章信息</a>
                         <dl class="layui-nav-child">
                             <dd><a href="javascript:;"><i class="layui-icon layui-icon-face-surprised"> </i> 一</a></dd>
                             <dd><a href="javascript:;"><i class="layui-icon layui-icon-face-surprised"> </i> 二</a></dd>
@@ -82,7 +86,7 @@
 
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <iframe name="fm" src="/home/dashboard.html" frameborder="0"></iframe>
+            <iframe name="fm" src="/home/dashboard.html" frameborder="0" id="iframe"></iframe>
         </div>
 
         <div class="layui-footer">
@@ -94,5 +98,7 @@
 
 </body>
 <script src="/assets/lib/layui/layui.all.js"></script>
+<script src="/assets/lib/jquery.js"></script>
+<script src="/assets/js/ht.js"></script>
 
 </html>
