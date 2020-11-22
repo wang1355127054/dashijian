@@ -22,7 +22,6 @@ var layer = layui.layer
   repwd: function(value) {
     var pwd = $('.form-2 [name=password]').val()
     if (pwd !== value) {
-      
       return '两次密码不一致！' 
     }
   }
@@ -33,7 +32,7 @@ $('#form-reg').submit(function(e) {
 // 阻止表单默认提交
 e.preventDefault(); 
 // 发起ajax post请求
-$.post('http://ajax.frontend.itheima.net/api/reguser',{
+$.post('/api/reguser',{
   username:$('#form-reg [name=username]').val(),password:$('#form-reg [name=password]').val() 
 }, function(res){
   console.log(res);
@@ -53,7 +52,7 @@ $('#form-dl').submit(function(e) {
   var ser=$(this).serialize()
   // 发起post请求
 $.ajax({
-  url: 'http://ajax.frontend.itheima.net/api/login',
+  url: '/api/login',
   method: 'post',
   // 快速获取表单中的数据
   data:ser,

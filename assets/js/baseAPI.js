@@ -2,7 +2,6 @@
 $.ajaxPrefilter(function(option){
     option.url = "http://ajax.frontend.itheima.net" + option.url
     
-
     // 为每次需要验证的请求添加headers
     if(option.url.indexOf('/my/') !== -1){
      
@@ -12,11 +11,11 @@ $.ajaxPrefilter(function(option){
     }
 
 option.complete = function(res){
-    // console.log(res.responseJSON.message);
+    // console.log(res.responseJSON);
     if(res.responseJSON.status === 1 && res.responseJSON.message ==="身份认证失败！"){
         // console.log(123);
         localStorage.removeItem('token');
-        location.href = "/login.html"
+        location.href = "/index.html"
     }
 }
 

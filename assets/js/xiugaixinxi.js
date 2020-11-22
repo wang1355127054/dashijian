@@ -5,10 +5,7 @@ initUserInfo();
 function initUserInfo() {
     $.ajax({
         method:"get",
-        url:"http://ajax.frontend.itheima.net/my/userinfo",
-        headers: {
-            Authorization: localStorage.getItem ('token') ||''
-        },
+        url:"/my/userinfo",
         success: function(res) {
             if(res.status!==0){
                 return layer.msg("获取用户信息失败！");
@@ -27,12 +24,8 @@ $('.layui-form').on('submit',function(e){
     // 发起ajax
     $.ajax({
         method: 'POST',
-        url:'http://ajax.frontend.itheima.net/my/userinfo',
+        url:'/my/userinfo',
         data:$(this).serialize(),
-        headers: {
-            Authorization: localStorage.getItem ('token') ||''
-        },
-        
         success:function(res){
             console.log(res);
             if(res.status!==0){

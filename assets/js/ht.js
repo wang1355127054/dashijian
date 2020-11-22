@@ -19,11 +19,8 @@ $(function() {
 function getUserInfo(){
     $.ajax({
         method: 'get',
-        url: 'http://ajax.frontend.itheima.net/my/userinfo',
+        url: '/my/userinfo',
         // 请求头像配置
-        headers: {
-            Authorization: localStorage.getItem ('token') ||''
-        }, 
         success: function(res){
             console.log(res);
             if(res.status!==0){

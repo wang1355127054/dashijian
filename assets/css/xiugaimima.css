@@ -6,15 +6,9 @@ body {
 
 body {
     padding: 20px;
-    background-color: #ccc;
+    background-color: #f2f3f5;
 }
 
 .layui-form {
-    /* width: 500px; */
-    padding: 20px;
-    background-color: #fff;
-}
-
-.layui-input {
     width: 500px;
 }
