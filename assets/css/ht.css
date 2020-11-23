@@ -36,6 +36,16 @@ body {
     overflow: hidden;
 }
 
+#btnLogout {
+    color: #edf3ea;
+    margin-left: 5px;
+    /* margin-top: 10px; */
+}
+
+#btnLogout:hover {
+    color: #f15810;
+}
+
 iframe {
     width: 100%;
     height: 100%;
