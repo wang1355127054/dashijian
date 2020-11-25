@@ -1,0 +1,21 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+    background-color: #f2f3f5;
+}
+
+/* .layui-form-item {
+    display: flex;
+    margin-left: 10px;
+    justify-content: left;
+} */
+
+.layui-form-item .layui-form-label {
+    background-color: #5FB878;
+    text-align: center;
+}
